@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    color:black;
+    background: gray;
+}
+
+.header{
+   position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 20px 10%;
+    background: whitesmoke;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    position: relative;
+    font-size: 25px;
+    color:black;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.navbar a{
+    display:inline;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s* var(--i));
+
+}
+
+.navbar a:hover{
+    color: aqua;
+}
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url() no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+
+}
+.home-content p{
+font-size: 20px;
+opacity: 0;
+animation: slideLeft 1s ease forwards;
+animation-delay: .7s;
+}
+
+.home-sce a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+    margin: 33px 15px 33px 0;
+}
+.home-sce a:hover{
+    background: aqua;
+    color: rgb(6, 8, 6);
+    box-shadow: 0 0 20px;
+}
+.box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: aqua;
+    border-radius: 16px;
+    color: rgb(7, 1, 12);
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation:slideTop 1s ease forwards ;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px aqua,
+    0 0 25px aqua;
+
+}
+.box:hover{
+    box-shadow: 0 0 5px aqua,
+    0 0 5px aqua,0 0 5px aqua,
+    0 0 5px aqua,0 0 5px aqua
+
+}
+.home-content h3  span{
+    color: black;
+    
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img img{
+    padding-bottom: 20%;
+   max-width: 630px;
+    height: auto;
+    width: 75%;
+    margin-left: 30px;
+    border-radius: 35px ;
+    margin: 30px 30px  ;
+    padding: 20px;
+}
+.about-text h2{
+    font-size: 60px;
+}
+.about-text h2 span{
+    color: aqua;
+}
+.about-text h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: whitesmoke;
+    line-height: 1,5;
+    margin: 15px 0 30px;
+}
+.about-text p{
+    font-size: 17px;
+    color:whitesmoke;
+    margin-bottom: 10px;
+}
+
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    padding-top: 50px;
+}
+.sub-title span{
+    color: aqua;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container1{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+.bar{
+    font-size:45px;
+    margin-top: 45px;
+}
+.progress-line{
+    position: relative;
+    width: 200px;
+    height: 10px;
+    border: 2px solid black;   
+} .progress-line1{
+    position: relative;
+    width: 200px;
+    height: 10px;
+    border: 2px solid black;   
+} 
+.progress-line2{
+    position: relative;
+    width: 200px;
+    height: 10px;
+    border: 2px solid black;   
+} 
+.progress-line3{
+    position: relative;
+    width: 200px;
+    height: 10px;
+    border: 2px solid black;   
+} 
+/*.progress-line4{
+    position: relative;
+    width: 200px;
+    height: 10px;
+    border: 2px solid black;   
+} */
+
+.div1{
+position: absolute;
+width: 0%;
+height:7px;
+background-color: aqua;
+animation: movement 3s infinite;
+}
+@keyframes movement{
+    100%{
+        width: 90%;
+    }
+}
+
+.div2{
+    position: absolute;
+    width: 0%;
+    height:7px;
+    background-color: aqua;
+    animation: movement 3s infinite;
+    }
+    @keyframes movement{
+        100%{
+            width:85%;
+        }
+    }
+    .div3{
+        position: absolute;
+        width: 0%;
+        height:7px;
+        background-color: aqua;
+        animation: movement 3s infinite;
+        }
+        @keyframes movement{
+            100%{
+                width: 80%;
+            }
+        }
+        .div4{
+            position: absolute;
+            width: 0%;
+            height:7px;
+            background-color: aqua;
+            animation: movement 3s infinite;
+            }
+            @keyframes movement{
+                100%{
+                    width: 75%;
+                }
+            }
+            .div5{
+                position: absolute;
+                width: 0%;
+                height:7px;
+                background-color: aqua;
+                animation: movement 3s infinite;
+                }
+                @keyframes movement{
+                    100%{
+                        width: 70%;
+                    }
+                }
+                                        
+
+
+
+
+.radial-bars{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.radial-bars .radial-bar{
+width: 50%;
+height: 170px;
+margin-bottom: 10px;
+position: relative;
+}
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stop-color: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset:502 ;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards; 
+
+}
+@keyframes animate-bar{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+.path{
+    stroke-width: 10;
+    stroke: aqua;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+.path-1{animation: animate-path1 1s  1s linear forwards;}
+.path-2 {animation: animate-path2 1s  1s linear forwards;}
+.path-3{animation: animate-path3 1s  1s linear forwards;}
+.path-4{animation: animate-path4 1s  1s linear forwards;}
+
+
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 50;;
+    }
+}
+@keyframes animate-path2{
+    100%{
+        stroke-dashoffset: 175;;
+    }
+}
+@keyframes animate-path3{
+    100%{
+        stroke-dashoffset: 135;;
+    }
+}
+@keyframes animate-path4{
+    100%{
+        stroke-dashoffset: 125;;
+    }
+}
+.radial-bar .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -30%);
+    font-size: 18px;
+    font-weight: 700;
+    animation: showtext  0.5s 1s linear forwards;
+    opacity: 2;
+}
+.radial-bar .text{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50px);
+    animation: showtext 0.5s 1s linear forwards;
+    opacity: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+
+    }
+   100%{
+        transform: translateX(0px);
+        opacity: 1; 
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+
+    }
+   100%{
+        transform: translateX(0px);
+        opacity: 1; 
+    }
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+   100%{
+        transform: translateY(0px);
+        opacity: 1; 
+    } 
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+   100%{
+        transform: translateY(0px);
+        opacity: 1; 
+    } 
+}
+
